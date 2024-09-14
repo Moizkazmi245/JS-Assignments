@@ -82,3 +82,12 @@ function showMesg (){
     var mesg = "Asslam O Alikom! whats up bro"
     showMessage1.innerHTML = mesg;
 }
+
+// 9. Store following string in a variable and show in alert and 
+// browser through JS
+
+function str() {
+    var strMesg = "“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”";
+    alert(strMesg);
+    console.log(strMesg);
+}
