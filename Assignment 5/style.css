@@ -30,3 +30,7 @@ input {
     margin-top: 20px;
     font-weight: bold;
 }
+
+ul li {
+    list-style: none;
+}

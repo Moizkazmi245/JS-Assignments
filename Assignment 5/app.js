@@ -83,3 +83,46 @@ var remainder = myVar % 3;
 
 document.getElementById('output').innerHTML += "The remainder is: " + remainder;
 }
+
+
+// 4. Cost of one movie ticket is 600 PKR. Write a script to 
+// store 
+// ticket price in a variable & calculate the cost of buying 5 
+// tickets
+
+var totalPrice = document.querySelector('#totalPrice');
+var number3 = document.querySelector('#number3')
+var price = 600;
+
+function totalPriceofTicket() {
+    var totalPriceTicket = +price * +number3.value
+
+    totalPrice.innerHTML = "The total amount is " + totalPriceTicket + " PKR";
+}
+
+
+// 5. Write a script to display multiplication table of any 
+// number in your browser.
+
+function generateTable() {
+    var num = document.querySelector('#number').value; 
+    var tableDiv = document.querySelector('#table');  
+    
+    
+    var tableHTML = `
+        <ul>
+            <li>${num} x 1 = ${num * 1}</li>
+            <li>${num} x 2 = ${num * 2}</li>
+            <li>${num} x 3 = ${num * 3}</li>
+            <li>${num} x 4 = ${num * 4}</li>
+            <li>${num} x 5 = ${num * 5}</li>
+            <li>${num} x 6 = ${num * 6}</li>
+            <li>${num} x 7 = ${num * 7}</li>
+            <li>${num} x 8 = ${num * 8}</li>
+            <li>${num} x 9 = ${num * 9}</li>
+            <li>${num} x 10 = ${num * 10}</li>
+        </ul>
+    `;
+
+    tableDiv.innerHTML = tableHTML; 
+}
